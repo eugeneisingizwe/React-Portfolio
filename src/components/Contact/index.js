@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { validateEmail } from "../../utils/helpers";
 
 function ContactForm() {
     const [formState, setFormState] = useState({name: "", email: "", info: ""});
@@ -9,7 +10,7 @@ function ContactForm() {
 
     function eventHandler (e) {
         if (e.target.name === "email") {
-            const isValid = e.target.value;
+            const isValid = validateEmail(e.target.value);
 
             if (!isValid){
                 setErrMessage("please enter a valid email");
@@ -17,7 +18,7 @@ function ContactForm() {
                 setErrMessage("");
             }
         } else {
-            if (!e.target.value.lenght) {
+            if (!e.target.value.length) {
                 setErrMessage(`${e.target.name} is required`);
             } else {
                 setErrMessage("");
@@ -37,8 +38,10 @@ function ContactForm() {
     
         < section className="container">
         <h1 data-testid="h1tag" className="title">Contact form</h1>
+
+        <hr></hr>
        
-        <form>
+        <form class="justify-content-center" id="contact-form">
       <div class="row">
         <div class="col">
           <input type="text" class="form-control" placeholder="name" defaultValue={name} onBlur={eventHandler}/>

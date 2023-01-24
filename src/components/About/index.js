@@ -1,13 +1,18 @@
 import React from "react";
+// import image from "../../assets/images/headshot";
 
 function About() {
   
     return (
         <section className="content">
-        <h1>Eugene Isingizwe</h1>
-        <div class="about-me">
-        <img src="/images/headshot 1.JPG" alt="headshot "/>
+        <h1 class="title">Eugene Isingizwe</h1>
+        <div>
+        <hr></hr>
+        {/* <img src={image} alt="headshot "/> */}
+        <image class="mb-5" id="avatar" src="../../assets/images/headshot 1.JPG" />
+        </div>
 
+        <div class="about-me">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias doloribus sint officiis. Cumque
                 facilis nisi, culpa maiores non officiis. Tempora commodi cum aut non sit molestias? Excepturi
                 odit natus corporis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id delectus
