@@ -8,7 +8,11 @@ function Navbars ({props}) {
     return (
 
 
-  <Navbar className="navbar navbar-expand-lg navbar-light bg-light">
+  <Navbar className="navbar">
+
+    <Link className="nav-link" to="/">
+      <h4 class="my-name">Eugene Isingizwe</h4>
+    </Link>
 
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">

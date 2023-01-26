@@ -4,13 +4,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ProjectCards (props) {
     return (
-        <div class="card" style={{width: "18rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#card-link" class="card-link">Card link</a>
-    <a href="#card-link" class="card-link">Another link</a>
+  <div className="card" >
+  <div className="card-body">
+  <img alt={props.name} src={props.image} />
+</div>
+
+<div className="Project-content">
+    <h5 className="card-title">{props.title}</h5>
+    <p class="project-icons-container">
+    <a href={props.github}><img class="project-icon" src="https://img.icons8.com/fluent/48/000000/github.png" alt="github Icon"/></a>
+    <a href={props.link}><img class="project-icon" src="https://img.icons8.com/pastel-glyph/64/null/external-link--v2.png" alt="links to deployed app" /></a>
+    </p>'
+    <h4 className="summary-title">{props.summaryTitle}</h4>
+      <p class="summary">
+        ({props.summary})
+      </p>
+      <h4 className="tech-title">{props.techTitle}</h4>
+      <p class="tech">
+        ({props.tech})
+      </p>
   </div>
 </div>
     )

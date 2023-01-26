@@ -1,15 +1,15 @@
 import React from "react";
-// import image from "../../assets/images/headshot";
+import assets from "../../assets/images/headshot 1.JPG"
 
 function About() {
   
     return (
-        <section className="content">
-        <h1 class="title">Eugene Isingizwe</h1>
+        <section className="about-content">
+        {/* <h1 class="my-name">Eugene Isingizwe</h1> */}
         <div>
-        <hr></hr>
+          
         {/* <img src={image} alt="headshot "/> */}
-        <image class="mb-5" id="avatar" src="../../assets/images/headshot 1.JPG" />
+        <img class="mb-5" id="headshot" src={assets} alt="eugene isingize" />
         </div>
 
         <div class="about-me">
