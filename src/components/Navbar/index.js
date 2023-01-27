@@ -10,33 +10,33 @@ function Navbars ({props}) {
 
   <Navbar className="navbar">
 
-    <Link className="nav-link" to="/">
+    <Link className="nav-name" to="/">
       <h4 class="my-name">Eugene Isingizwe</h4>
     </Link>
 
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <Link to="/about">
-        <a class="nav-link" href="#aboutme">About Me <span class="sr-only"></span></a>
+        <Link class="nav-item-link" to="/about">
+        About Me
       </Link>
       </li>
 
       <li class="nav-item">
-      <Link to="/portfolio">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
+      <Link class="nav-item-link" to="/portfolio">
+       Portfolio
         </Link>
       </li>
 
       <li class="nav-item">
-      <Link to="/contact">
-        <a class="nav-link" href="#contactme">Contact Me</a>
+      <Link class="nav-item-link" to="/contact">
+        Contact Me
         </Link>
       </li>
 
       <li class="nav-item">
-      <Link to="/resume">
-        <a class="nav-link" href="#myresume">Resume</a>
+      <Link class="nav-item-link" to="/resume">
+        Resume
         </Link>
       </li>
     </ul>

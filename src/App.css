@@ -33,9 +33,10 @@ body{
 .my-name{
 
   margin-top: 0px;
-  margin-left: 100px;
+  margin-left: 50px;
   color: white;
   font-size: 40px;
+  
   
 }
 
@@ -58,19 +59,34 @@ body{
   width: 150px;
   margin: 40px;
   margin-top: 50px;
+  
 
+
+}
+
+.verticalLine{
+  border-left: 5px solid;
+  height: 400px;
+  position: relative;
+  left: 1%;
+  margin-right: 50px;
+  top: 10;
+  flex: 0 0 5%;
+  padding-right: 30px
 
 }
 
 .about-me p{
-  margin: 3rem 0;
-  max-width: 1300px;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  margin-top: 80px;
-  margin-right: 100px;
-
+  display: flex;
+  flex-direction: row;
+  max-width: 50%;
+  
+ 
 }
+
+
 
 button {
   font-size: 1rem;
@@ -88,6 +104,13 @@ form {
   width: 60%;
 }
 
+.navbar-nav{
+  width: 100%;
+    justify-content: flex-end;
+    gap: 50px;
+    height: 100%;
+}
+
 .navbar{
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
@@ -99,8 +122,9 @@ form {
 
 
 .nav-item {
-  padding-left: 100px;
-  margin-bottom: 50px;
+  /* padding-left: 100px; */
+  /* margin-bottom: 50px; */
+  
 
 
 }
@@ -108,20 +132,34 @@ form {
 .collapse {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0px 20px;
     align-items: right;
+    height: 100%;
    
 
 }
+.nav-name {
+  /* margin-top: 0px; */
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
 
-.navbar-nav > li a {
-  margin-top: 0px;
-  margin-left: 255px;
+.nav-link {
+  /* margin-top: 0px;
+  margin-left: 255px; */
   color: white;
   font-size: 30px;
 }
 
-
+.nav-item-link{
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 /* Portfolio section*/
 
 .wrapper {
@@ -208,42 +246,13 @@ form {
   font-style: italic;
 }
 
-.LinkedIn{
-  background-color: lightgrey;
-  flex-basis: 37%;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  flex-wrap: 1;
-  transition: all 0.5s ease-in-out;
-  width: 50px;
-  height: 200px;
-  text-size-adjust: 25px;
-  justify-content: left;
-  transition: outline 0.6s linear;
-
-}
-
 .LinkedIn:hover { outline-width: 10px; }
 
-.github  { 
-  background-color: aqua;
-  flex-basis: 37%;
- /* border: 5px solid aqua;*/
-  padding: 20px;
-  margin: 10px;
+.media-links  { 
+  
+  flex-basis: 40%;
   text-align: center;
-
-  flex-wrap: 1;
   transition: all 0.5s ease-in-out;
-  width: 50px;
-  height: 200px;
-  text-size-adjust: 25px;
-  justify-content: left;
-
-
-  transition: outline 0.6s linear;
-
 }
 
 .github:hover { outline-width: 10px; }
@@ -254,30 +263,34 @@ a {
 }
 
 .footer { 
-  padding: 30px;
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+ 
 }
 
-.footer img{
-  justify-content: space-evenly;
-
-}
 
 .icon {
-  margin-left: 10px;
-  padding: 5;
-  font-weight: 5px;
+  justify-content: space-evenly;
+  gap: 100px;
+  
 }
 
 .footer p {
   
   color: white;
   align-items: center;
+
 }
 
 @media only screen and (max-width: 900px) {
-  .about-content .navbar{
+  .about-content header{
     flex-direction: column;
   }
 }

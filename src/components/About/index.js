@@ -12,6 +12,10 @@ function About() {
         <img class="mb-5" id="headshot" src={assets} alt="eugene isingize" />
         </div>
 
+        <div class="verticalLine">
+         
+        </div>
+
         <div class="about-me">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias doloribus sint officiis. Cumque
                 facilis nisi, culpa maiores non officiis. Tempora commodi cum aut non sit molestias? Excepturi
