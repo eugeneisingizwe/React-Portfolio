@@ -3,6 +3,8 @@ import React from "react";
 function Footer() {
     return (
         <footer className="footer ">
+
+            <h3>Links</h3>
                 <div className="media-links">
 
                 <a className="github" href="https://github.com/eugeneisingizwe/"><img src="https://img.icons8.com/windows/32/null/github.png" alt="Github" className="icon"/></a>
