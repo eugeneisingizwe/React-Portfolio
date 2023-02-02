@@ -1,7 +1,7 @@
 {
     "name": "React-Portfolio",
     "version": "0.1.0",
-    "homepage": "https://eugene-isingizwe.io/React-Portfolio.com",
+    "homepage": "https://eugeneisingizwe.io/React-Portfolio.com",
     "private": true,
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.32",
