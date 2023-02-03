@@ -40,6 +40,11 @@ body{
   
 }
 
+.scroll-containers{
+  height: calc(100vh - 220px);
+    overflow-y: scroll;
+}
+
 
 .about-content {
   padding-top: 45px;
@@ -118,7 +123,7 @@ form {
 .navbar{
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-  margin-bottom: 15px;
+  
   height: 120px;
 
 }
@@ -292,6 +297,7 @@ a {
   margin: 15px;
   margin-top: 2px;
   width: 25%;
+  background-color: white;
   
 }
 
